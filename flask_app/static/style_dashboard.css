@@ -1,0 +1,17 @@
+.top-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recipe-card {
+    display: flex;
+    border: 2px solid black;
+    background-color: bisque;
+    justify-content: space-around;
+}
+
+.left, .right {
+    margin: 0px;
+}
+
