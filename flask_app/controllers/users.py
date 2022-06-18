@@ -28,6 +28,8 @@ def register():
 
 @app.route("/dashboard")
 def dashboard():
+    if "user_id" not in session:
+        return redirect("/logout")
     this_user = User.get_user_by_id({"id": session["user_id"]})
     return render_template("dashboard.html", this_user = this_user, recipes = Recipe.get_all())
 
